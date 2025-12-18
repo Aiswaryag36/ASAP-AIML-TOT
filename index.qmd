@@ -1,7 +1,220 @@
 ---
 title: "My Personal Webpage"
 ---
-helloo
-Welcome to my personal page! I thrive on solving complex problems and love turning innovative ideas into reality. Whether I'm coding, designing, or exploring new fields, I bring dedication and curiosity to everything I do. Outside of work, I enjoy hiking, reading science fiction, and experimenting with new recipes. Here, you'll find insights into my projects, interests, and the journey I'm on to make a positive impact in the world.
+---
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+title: "Machine Learning – Concise Notes"
+author: "Aiswarya G"
+format:
+html:
+toc: true
+number-sections: true
+theme: cosmo
+pdf:
+toc: true
+number-sections: true
+execute:
+echo: true
+warning: false
+message: false
+--------------
+
+## 1. Introduction to Machine Learning
+
+**Machine Learning (ML)** enables systems to learn patterns from data and make predictions or decisions without being explicitly programmed.
+
+### Types of ML
+
+* **Supervised Learning**: Labeled data (Classification, Regression)
+* **Unsupervised Learning**: Unlabeled data (Clustering, Dimensionality Reduction)
+* **Semi-supervised Learning**: Small labeled + large unlabeled data
+* **Reinforcement Learning**: Agent–environment interaction
+
+### Typical ML Pipeline
+
+1. Data collection
+2. Preprocessing
+3. Feature extraction/selection
+4. Model training
+5. Evaluation
+6. Deployment
+
+## 2. Mathematical Foundations
+
+### Linear Algebra
+
+* Vectors, matrices
+* Eigenvalues and eigenvectors
+* Matrix norms
+
+### Probability & Statistics
+
+* Random variables
+* Expectation, variance
+* Bayes theorem
+
+### Optimization
+
+* Convex vs non-convex functions
+* Gradient descent variants
+
+## 3. Supervised Learning
+
+### 3.1 Regression
+
+#### Linear Regression
+
+[
+\hat{y} = Xw + b
+]
+
+* Loss: Mean Squared Error (MSE)
+* Solution: Normal equation / Gradient descent
+
+#### Regularization
+
+* **Ridge (L2)**
+* **Lasso (L1)**
+
+### 3.2 Classification
+
+#### Logistic Regression
+
+[
+P(y=1|x) = \sigma(w^Tx)
+]
+
+* Loss: Binary Cross-Entropy
+
+#### k-Nearest Neighbors (k-NN)
+
+* Distance-based classifier
+
+#### Support Vector Machines (SVM)
+
+* Maximum margin classifier
+* Kernel trick
+
+## 4. Unsupervised Learning
+
+### 4.1 Clustering
+
+#### k-Means
+
+* Objective: Minimize within-cluster variance
+
+#### Hierarchical Clustering
+
+* Agglomerative vs Divisive
+
+#### DBSCAN
+
+* Density-based clustering
+
+### 4.2 Dimensionality Reduction
+
+#### Principal Component Analysis (PCA)
+
+* Variance maximization
+* Eigen decomposition of covariance matrix
+
+#### t-SNE / UMAP
+
+* Non-linear visualization methods
+
+## 5. Model Evaluation
+
+### Metrics
+
+* Accuracy
+* Precision, Recall, F1-score
+* ROC–AUC
+
+### Validation Techniques
+
+* Train/Test split
+* k-fold Cross-validation
+
+### Bias–Variance Tradeoff
+
+## 6. Learning Theory (Brief)
+
+* Empirical Risk Minimization (ERM)
+* Structural Risk Minimization (SRM)
+* VC Dimension
+* Generalization bounds
+
+## 7. Neural Networks (Overview)
+
+### Artificial Neural Network (ANN)
+
+* Perceptron model
+* Activation functions: ReLU, Sigmoid, Tanh
+
+### Training
+
+* Backpropagation
+* Gradient descent
+
+### Overfitting Control
+
+* Dropout
+* Early stopping
+
+## 8. Convolutional Neural Networks (CNN)
+
+* Convolution layer
+* Pooling layer
+* Fully connected layer
+
+Applications:
+
+* Image classification
+* Change detection
+
+## 9. Practical Considerations
+
+### Data Preprocessing
+
+* Normalization / Standardization
+* Handling missing values
+
+### Feature Engineering
+
+* Domain knowledge
+* Multiscale features
+
+## 10. Tools & Libraries
+
+* **Python**
+* NumPy, Pandas
+* Scikit-learn
+* TensorFlow / PyTorch
+
+```{python}
+print("hello code")
+# Read two numbers from the user
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+# Add the numbers
+sum = a + b
+
+# Display the result
+print("Sum =", sum)
+
+```
+## 11. Summary
+
+Machine Learning combines mathematical foundations, algorithms, and data-driven experimentation to solve real-world problems efficiently.
+
+---
+
+> These notes are designed to be concise and extensible. You can add code blocks, datasets, and experiments directly in Quarto.
+
+# non runnable code
+```
+gcjhasgj
+
+```
+# to insert ![alterantive name](link)
