@@ -188,8 +188,55 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-to-machine-learning" id="toc-introduction-to-machine-learning" class="nav-link active" data-scroll-target="#introduction-to-machine-learning">1. Introduction to Machine Learning</a>
+  <ul class="collapse">
+  <li><a href="#types-of-ml" id="toc-types-of-ml" class="nav-link" data-scroll-target="#types-of-ml">Types of ML</a></li>
+  <li><a href="#typical-ml-pipeline" id="toc-typical-ml-pipeline" class="nav-link" data-scroll-target="#typical-ml-pipeline">Typical ML Pipeline</a></li>
+  </ul></li>
+  <li><a href="#mathematical-foundations" id="toc-mathematical-foundations" class="nav-link" data-scroll-target="#mathematical-foundations">2. Mathematical Foundations</a>
+  <ul class="collapse">
+  <li><a href="#linear-algebra" id="toc-linear-algebra" class="nav-link" data-scroll-target="#linear-algebra">Linear Algebra</a></li>
+  <li><a href="#probability-statistics" id="toc-probability-statistics" class="nav-link" data-scroll-target="#probability-statistics">Probability &amp; Statistics</a></li>
+  <li><a href="#optimization" id="toc-optimization" class="nav-link" data-scroll-target="#optimization">Optimization</a></li>
+  </ul></li>
+  <li><a href="#supervised-learning" id="toc-supervised-learning" class="nav-link" data-scroll-target="#supervised-learning">3. Supervised Learning</a>
+  <ul class="collapse">
+  <li><a href="#regression" id="toc-regression" class="nav-link" data-scroll-target="#regression">3.1 Regression</a></li>
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">3.2 Classification</a></li>
+  </ul></li>
+  <li><a href="#unsupervised-learning" id="toc-unsupervised-learning" class="nav-link" data-scroll-target="#unsupervised-learning">4. Unsupervised Learning</a>
+  <ul class="collapse">
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">4.1 Clustering</a></li>
+  <li><a href="#dimensionality-reduction" id="toc-dimensionality-reduction" class="nav-link" data-scroll-target="#dimensionality-reduction">4.2 Dimensionality Reduction</a></li>
+  </ul></li>
+  <li><a href="#model-evaluation" id="toc-model-evaluation" class="nav-link" data-scroll-target="#model-evaluation">5. Model Evaluation</a>
+  <ul class="collapse">
+  <li><a href="#metrics" id="toc-metrics" class="nav-link" data-scroll-target="#metrics">Metrics</a></li>
+  <li><a href="#validation-techniques" id="toc-validation-techniques" class="nav-link" data-scroll-target="#validation-techniques">Validation Techniques</a></li>
+  <li><a href="#biasvariance-tradeoff" id="toc-biasvariance-tradeoff" class="nav-link" data-scroll-target="#biasvariance-tradeoff">Bias–Variance Tradeoff</a></li>
+  </ul></li>
+  <li><a href="#learning-theory-brief" id="toc-learning-theory-brief" class="nav-link" data-scroll-target="#learning-theory-brief">6. Learning Theory (Brief)</a></li>
+  <li><a href="#neural-networks-overview" id="toc-neural-networks-overview" class="nav-link" data-scroll-target="#neural-networks-overview">7. Neural Networks (Overview)</a>
+  <ul class="collapse">
+  <li><a href="#artificial-neural-network-ann" id="toc-artificial-neural-network-ann" class="nav-link" data-scroll-target="#artificial-neural-network-ann">Artificial Neural Network (ANN)</a></li>
+  <li><a href="#training" id="toc-training" class="nav-link" data-scroll-target="#training">Training</a></li>
+  <li><a href="#overfitting-control" id="toc-overfitting-control" class="nav-link" data-scroll-target="#overfitting-control">Overfitting Control</a></li>
+  </ul></li>
+  <li><a href="#convolutional-neural-networks-cnn" id="toc-convolutional-neural-networks-cnn" class="nav-link" data-scroll-target="#convolutional-neural-networks-cnn">8. Convolutional Neural Networks (CNN)</a></li>
+  <li><a href="#practical-considerations" id="toc-practical-considerations" class="nav-link" data-scroll-target="#practical-considerations">9. Practical Considerations</a>
+  <ul class="collapse">
+  <li><a href="#data-preprocessing" id="toc-data-preprocessing" class="nav-link" data-scroll-target="#data-preprocessing">Data Preprocessing</a></li>
+  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering">Feature Engineering</a></li>
+  </ul></li>
+  <li><a href="#tools-libraries" id="toc-tools-libraries" class="nav-link" data-scroll-target="#tools-libraries">10. Tools &amp; Libraries</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">11. Summary</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -213,10 +260,245 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>helloo Welcome to my personal page! I thrive on solving complex problems and love turning innovative ideas into reality. Whether I’m coding, designing, or exploring new fields, I bring dedication and curiosity to everything I do. Outside of work, I enjoy hiking, reading science fiction, and experimenting with new recipes. Here, you’ll find insights into my projects, interests, and the journey I’m on to make a positive impact in the world.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<hr>
+<p>title: “Machine Learning – Concise Notes” author: “Aiswarya G” format: html: toc: true number-sections: true theme: cosmo pdf: toc: true number-sections: true execute: echo: true warning: false message: false ————–</p>
+<section id="introduction-to-machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="introduction-to-machine-learning">1. Introduction to Machine Learning</h2>
+<p><strong>Machine Learning (ML)</strong> enables systems to learn patterns from data and make predictions or decisions without being explicitly programmed.</p>
+<section id="types-of-ml" class="level3">
+<h3 class="anchored" data-anchor-id="types-of-ml">Types of ML</h3>
+<ul>
+<li><strong>Supervised Learning</strong>: Labeled data (Classification, Regression)</li>
+<li><strong>Unsupervised Learning</strong>: Unlabeled data (Clustering, Dimensionality Reduction)</li>
+<li><strong>Semi-supervised Learning</strong>: Small labeled + large unlabeled data</li>
+<li><strong>Reinforcement Learning</strong>: Agent–environment interaction</li>
+</ul>
+</section>
+<section id="typical-ml-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="typical-ml-pipeline">Typical ML Pipeline</h3>
+<ol type="1">
+<li>Data collection</li>
+<li>Preprocessing</li>
+<li>Feature extraction/selection</li>
+<li>Model training</li>
+<li>Evaluation</li>
+<li>Deployment</li>
+</ol>
+</section>
+</section>
+<section id="mathematical-foundations" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-foundations">2. Mathematical Foundations</h2>
+<section id="linear-algebra" class="level3">
+<h3 class="anchored" data-anchor-id="linear-algebra">Linear Algebra</h3>
+<ul>
+<li>Vectors, matrices</li>
+<li>Eigenvalues and eigenvectors</li>
+<li>Matrix norms</li>
+</ul>
+</section>
+<section id="probability-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="probability-statistics">Probability &amp; Statistics</h3>
+<ul>
+<li>Random variables</li>
+<li>Expectation, variance</li>
+<li>Bayes theorem</li>
+</ul>
+</section>
+<section id="optimization" class="level3">
+<h3 class="anchored" data-anchor-id="optimization">Optimization</h3>
+<ul>
+<li>Convex vs non-convex functions</li>
+<li>Gradient descent variants</li>
+</ul>
+</section>
+</section>
+<section id="supervised-learning" class="level2">
+<h2 class="anchored" data-anchor-id="supervised-learning">3. Supervised Learning</h2>
+<section id="regression" class="level3">
+<h3 class="anchored" data-anchor-id="regression">3.1 Regression</h3>
+<section id="linear-regression" class="level4">
+<h4 class="anchored" data-anchor-id="linear-regression">Linear Regression</h4>
+<p>[ = Xw + b]</p>
+<ul>
+<li>Loss: Mean Squared Error (MSE)</li>
+<li>Solution: Normal equation / Gradient descent</li>
+</ul>
+</section>
+<section id="regularization" class="level4">
+<h4 class="anchored" data-anchor-id="regularization">Regularization</h4>
+<ul>
+<li><strong>Ridge (L2)</strong></li>
+<li><strong>Lasso (L1)</strong></li>
+</ul>
+</section>
+</section>
+<section id="classification" class="level3">
+<h3 class="anchored" data-anchor-id="classification">3.2 Classification</h3>
+<section id="logistic-regression" class="level4">
+<h4 class="anchored" data-anchor-id="logistic-regression">Logistic Regression</h4>
+<p>[ P(y=1|x) = (w^Tx)]</p>
+<ul>
+<li>Loss: Binary Cross-Entropy</li>
+</ul>
+</section>
+<section id="k-nearest-neighbors-k-nn" class="level4">
+<h4 class="anchored" data-anchor-id="k-nearest-neighbors-k-nn">k-Nearest Neighbors (k-NN)</h4>
+<ul>
+<li>Distance-based classifier</li>
+</ul>
+</section>
+<section id="support-vector-machines-svm" class="level4">
+<h4 class="anchored" data-anchor-id="support-vector-machines-svm">Support Vector Machines (SVM)</h4>
+<ul>
+<li>Maximum margin classifier</li>
+<li>Kernel trick</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="unsupervised-learning" class="level2">
+<h2 class="anchored" data-anchor-id="unsupervised-learning">4. Unsupervised Learning</h2>
+<section id="clustering" class="level3">
+<h3 class="anchored" data-anchor-id="clustering">4.1 Clustering</h3>
+<section id="k-means" class="level4">
+<h4 class="anchored" data-anchor-id="k-means">k-Means</h4>
+<ul>
+<li>Objective: Minimize within-cluster variance</li>
+</ul>
+</section>
+<section id="hierarchical-clustering" class="level4">
+<h4 class="anchored" data-anchor-id="hierarchical-clustering">Hierarchical Clustering</h4>
+<ul>
+<li>Agglomerative vs Divisive</li>
+</ul>
+</section>
+<section id="dbscan" class="level4">
+<h4 class="anchored" data-anchor-id="dbscan">DBSCAN</h4>
+<ul>
+<li>Density-based clustering</li>
+</ul>
+</section>
+</section>
+<section id="dimensionality-reduction" class="level3">
+<h3 class="anchored" data-anchor-id="dimensionality-reduction">4.2 Dimensionality Reduction</h3>
+<section id="principal-component-analysis-pca" class="level4">
+<h4 class="anchored" data-anchor-id="principal-component-analysis-pca">Principal Component Analysis (PCA)</h4>
+<ul>
+<li>Variance maximization</li>
+<li>Eigen decomposition of covariance matrix</li>
+</ul>
+</section>
+<section id="t-sne-umap" class="level4">
+<h4 class="anchored" data-anchor-id="t-sne-umap">t-SNE / UMAP</h4>
+<ul>
+<li>Non-linear visualization methods</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="model-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="model-evaluation">5. Model Evaluation</h2>
+<section id="metrics" class="level3">
+<h3 class="anchored" data-anchor-id="metrics">Metrics</h3>
+<ul>
+<li>Accuracy</li>
+<li>Precision, Recall, F1-score</li>
+<li>ROC–AUC</li>
+</ul>
+</section>
+<section id="validation-techniques" class="level3">
+<h3 class="anchored" data-anchor-id="validation-techniques">Validation Techniques</h3>
+<ul>
+<li>Train/Test split</li>
+<li>k-fold Cross-validation</li>
+</ul>
+</section>
+<section id="biasvariance-tradeoff" class="level3">
+<h3 class="anchored" data-anchor-id="biasvariance-tradeoff">Bias–Variance Tradeoff</h3>
+</section>
+</section>
+<section id="learning-theory-brief" class="level2">
+<h2 class="anchored" data-anchor-id="learning-theory-brief">6. Learning Theory (Brief)</h2>
+<ul>
+<li>Empirical Risk Minimization (ERM)</li>
+<li>Structural Risk Minimization (SRM)</li>
+<li>VC Dimension</li>
+<li>Generalization bounds</li>
+</ul>
+</section>
+<section id="neural-networks-overview" class="level2">
+<h2 class="anchored" data-anchor-id="neural-networks-overview">7. Neural Networks (Overview)</h2>
+<section id="artificial-neural-network-ann" class="level3">
+<h3 class="anchored" data-anchor-id="artificial-neural-network-ann">Artificial Neural Network (ANN)</h3>
+<ul>
+<li>Perceptron model</li>
+<li>Activation functions: ReLU, Sigmoid, Tanh</li>
+</ul>
+</section>
+<section id="training" class="level3">
+<h3 class="anchored" data-anchor-id="training">Training</h3>
+<ul>
+<li>Backpropagation</li>
+<li>Gradient descent</li>
+</ul>
+</section>
+<section id="overfitting-control" class="level3">
+<h3 class="anchored" data-anchor-id="overfitting-control">Overfitting Control</h3>
+<ul>
+<li>Dropout</li>
+<li>Early stopping</li>
+</ul>
+</section>
+</section>
+<section id="convolutional-neural-networks-cnn" class="level2">
+<h2 class="anchored" data-anchor-id="convolutional-neural-networks-cnn">8. Convolutional Neural Networks (CNN)</h2>
+<ul>
+<li>Convolution layer</li>
+<li>Pooling layer</li>
+<li>Fully connected layer</li>
+</ul>
+<p>Applications:</p>
+<ul>
+<li>Image classification</li>
+<li>Change detection</li>
+</ul>
+</section>
+<section id="practical-considerations" class="level2">
+<h2 class="anchored" data-anchor-id="practical-considerations">9. Practical Considerations</h2>
+<section id="data-preprocessing" class="level3">
+<h3 class="anchored" data-anchor-id="data-preprocessing">Data Preprocessing</h3>
+<ul>
+<li>Normalization / Standardization</li>
+<li>Handling missing values</li>
+</ul>
+</section>
+<section id="feature-engineering" class="level3">
+<h3 class="anchored" data-anchor-id="feature-engineering">Feature Engineering</h3>
+<ul>
+<li>Domain knowledge</li>
+<li>Multiscale features</li>
+</ul>
+</section>
+</section>
+<section id="tools-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="tools-libraries">10. Tools &amp; Libraries</h2>
+<ul>
+<li><strong>Python</strong></li>
+<li>NumPy, Pandas</li>
+<li>Scikit-learn</li>
+<li>TensorFlow / PyTorch</li>
+</ul>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">11. Summary</h2>
+<p>Machine Learning combines mathematical foundations, algorithms, and data-driven experimentation to solve real-world problems efficiently.</p>
+<hr>
+<blockquote class="blockquote">
+<p>These notes are designed to be concise and extensible. You can add code blocks, datasets, and experiments directly in Quarto.</p>
+</blockquote>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -292,7 +574,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/Aiswaryag36\.github\.io\/ASAP-AIML-TOT\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

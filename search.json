@@ -18,7 +18,84 @@
     "href": "index.html",
     "title": "My Personal Webpage",
     "section": "",
-    "text": "helloo Welcome to my personal page! I thrive on solving complex problems and love turning innovative ideas into reality. Whether I’m coding, designing, or exploring new fields, I bring dedication and curiosity to everything I do. Outside of work, I enjoy hiking, reading science fiction, and experimenting with new recipes. Here, you’ll find insights into my projects, interests, and the journey I’m on to make a positive impact in the world.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "title: “Machine Learning – Concise Notes” author: “Aiswarya G” format: html: toc: true number-sections: true theme: cosmo pdf: toc: true number-sections: true execute: echo: true warning: false message: false ————–"
+  },
+  {
+    "objectID": "index.html#introduction-to-machine-learning",
+    "href": "index.html#introduction-to-machine-learning",
+    "title": "My Personal Webpage",
+    "section": "1. Introduction to Machine Learning",
+    "text": "1. Introduction to Machine Learning\nMachine Learning (ML) enables systems to learn patterns from data and make predictions or decisions without being explicitly programmed.\n\nTypes of ML\n\nSupervised Learning: Labeled data (Classification, Regression)\nUnsupervised Learning: Unlabeled data (Clustering, Dimensionality Reduction)\nSemi-supervised Learning: Small labeled + large unlabeled data\nReinforcement Learning: Agent–environment interaction\n\n\n\nTypical ML Pipeline\n\nData collection\nPreprocessing\nFeature extraction/selection\nModel training\nEvaluation\nDeployment"
+  },
+  {
+    "objectID": "index.html#mathematical-foundations",
+    "href": "index.html#mathematical-foundations",
+    "title": "My Personal Webpage",
+    "section": "2. Mathematical Foundations",
+    "text": "2. Mathematical Foundations\n\nLinear Algebra\n\nVectors, matrices\nEigenvalues and eigenvectors\nMatrix norms\n\n\n\nProbability & Statistics\n\nRandom variables\nExpectation, variance\nBayes theorem\n\n\n\nOptimization\n\nConvex vs non-convex functions\nGradient descent variants"
+  },
+  {
+    "objectID": "index.html#supervised-learning",
+    "href": "index.html#supervised-learning",
+    "title": "My Personal Webpage",
+    "section": "3. Supervised Learning",
+    "text": "3. Supervised Learning\n\n3.1 Regression\n\nLinear Regression\n[ = Xw + b]\n\nLoss: Mean Squared Error (MSE)\nSolution: Normal equation / Gradient descent\n\n\n\nRegularization\n\nRidge (L2)\nLasso (L1)\n\n\n\n\n3.2 Classification\n\nLogistic Regression\n[ P(y=1|x) = (w^Tx)]\n\nLoss: Binary Cross-Entropy\n\n\n\nk-Nearest Neighbors (k-NN)\n\nDistance-based classifier\n\n\n\nSupport Vector Machines (SVM)\n\nMaximum margin classifier\nKernel trick"
+  },
+  {
+    "objectID": "index.html#unsupervised-learning",
+    "href": "index.html#unsupervised-learning",
+    "title": "My Personal Webpage",
+    "section": "4. Unsupervised Learning",
+    "text": "4. Unsupervised Learning\n\n4.1 Clustering\n\nk-Means\n\nObjective: Minimize within-cluster variance\n\n\n\nHierarchical Clustering\n\nAgglomerative vs Divisive\n\n\n\nDBSCAN\n\nDensity-based clustering\n\n\n\n\n4.2 Dimensionality Reduction\n\nPrincipal Component Analysis (PCA)\n\nVariance maximization\nEigen decomposition of covariance matrix\n\n\n\nt-SNE / UMAP\n\nNon-linear visualization methods"
+  },
+  {
+    "objectID": "index.html#model-evaluation",
+    "href": "index.html#model-evaluation",
+    "title": "My Personal Webpage",
+    "section": "5. Model Evaluation",
+    "text": "5. Model Evaluation\n\nMetrics\n\nAccuracy\nPrecision, Recall, F1-score\nROC–AUC\n\n\n\nValidation Techniques\n\nTrain/Test split\nk-fold Cross-validation\n\n\n\nBias–Variance Tradeoff"
+  },
+  {
+    "objectID": "index.html#learning-theory-brief",
+    "href": "index.html#learning-theory-brief",
+    "title": "My Personal Webpage",
+    "section": "6. Learning Theory (Brief)",
+    "text": "6. Learning Theory (Brief)\n\nEmpirical Risk Minimization (ERM)\nStructural Risk Minimization (SRM)\nVC Dimension\nGeneralization bounds"
+  },
+  {
+    "objectID": "index.html#neural-networks-overview",
+    "href": "index.html#neural-networks-overview",
+    "title": "My Personal Webpage",
+    "section": "7. Neural Networks (Overview)",
+    "text": "7. Neural Networks (Overview)\n\nArtificial Neural Network (ANN)\n\nPerceptron model\nActivation functions: ReLU, Sigmoid, Tanh\n\n\n\nTraining\n\nBackpropagation\nGradient descent\n\n\n\nOverfitting Control\n\nDropout\nEarly stopping"
+  },
+  {
+    "objectID": "index.html#convolutional-neural-networks-cnn",
+    "href": "index.html#convolutional-neural-networks-cnn",
+    "title": "My Personal Webpage",
+    "section": "8. Convolutional Neural Networks (CNN)",
+    "text": "8. Convolutional Neural Networks (CNN)\n\nConvolution layer\nPooling layer\nFully connected layer\n\nApplications:\n\nImage classification\nChange detection"
+  },
+  {
+    "objectID": "index.html#practical-considerations",
+    "href": "index.html#practical-considerations",
+    "title": "My Personal Webpage",
+    "section": "9. Practical Considerations",
+    "text": "9. Practical Considerations\n\nData Preprocessing\n\nNormalization / Standardization\nHandling missing values\n\n\n\nFeature Engineering\n\nDomain knowledge\nMultiscale features"
+  },
+  {
+    "objectID": "index.html#tools-libraries",
+    "href": "index.html#tools-libraries",
+    "title": "My Personal Webpage",
+    "section": "10. Tools & Libraries",
+    "text": "10. Tools & Libraries\n\nPython\nNumPy, Pandas\nScikit-learn\nTensorFlow / PyTorch"
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "My Personal Webpage",
+    "section": "11. Summary",
+    "text": "11. Summary\nMachine Learning combines mathematical foundations, algorithms, and data-driven experimentation to solve real-world problems efficiently.\n\n\nThese notes are designed to be concise and extensible. You can add code blocks, datasets, and experiments directly in Quarto."
   },
   {
     "objectID": "posts/another_post.html",
